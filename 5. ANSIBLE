@@ -71,6 +71,10 @@ ansible all[-3] --list-hosts      # shows the last 3rd server
 ====================================================================================================
 
 WORKING WITH ANSIBLE:
+red: fail
+yello: success
+green: already done
+blue: skip 
 
 1. ADHOC: SIMPLE LINUX COMMANDS USED FOR ONLY ONCE WORKS
 
