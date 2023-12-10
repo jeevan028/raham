@@ -196,6 +196,11 @@ HISTORY:
 
 
 SHELL VS COMMAND VS RAW:
+Command module is more better than shell module
+and 
+Raw module is better than command module
+R>C>S
+if edina command execute avali ankunte backend lo python install aie undali but ram module ki atla avasaram ledu andk better
 
 - hosts: all
   tasks:
