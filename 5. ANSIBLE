@@ -383,7 +383,7 @@ HISTORY:
   208  ansible-playbook raham.yml
   209  cat raham.yml
 
-===================================================================================================
+============================================== class-46 ===============================================
 06-7-2023 day-04: conditions, handlsers, lopps, roles and galaxy
 
 CLUSTER: group of nodes/servers.
