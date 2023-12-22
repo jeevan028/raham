@@ -443,7 +443,7 @@ LOOPS: It will do operation recursively.
 
 
 ROLES:
-roles valla use enti ante playbook encapsulate avthundi and resuable cheskochu like oka main file lo hosts name ichi playbook run chesetime lo pkgs or user file name
+roles valla use enti ante playbook encapsulate avthundi and resuable cheskochu like oka main file lo hosts name ichi playbook run chesetime lo ichina role name(pkgs or user) file name
 isthe ah playbook execute avthundi
 
 - master.yml
