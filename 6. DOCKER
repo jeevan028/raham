@@ -1,3 +1,4 @@
+************* class 48 ***************
 MONOLITIC: Multiple services on a single server with single db
 MICROSERVICES: Multiple services on Multiple servers with Multiple db
 
@@ -67,7 +68,7 @@ HISTORY:
    25  docker run -it --name cont4 amazonlinux
    26  history
 
-=======================================================
+=================***********Class 49******======================================
 11-07-2023: day 02
 
 DOCKER FILE:
