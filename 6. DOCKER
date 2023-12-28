@@ -77,7 +77,7 @@ it will have components, which are in capital letters.
 in Dockerfile D must be capital.
 
 BUILD -- > To run the docker file
-command: docker build -t image_name path_of_Dockerfile
+command: docker build -t image_name path_of_Dockerfile [docker build -t img1 .]
 
 FROM: base image
 RUN: executes Linux commands (image creation)
