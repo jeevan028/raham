@@ -78,6 +78,7 @@ in Dockerfile D must be capital.
 
 BUILD -- > To run the docker file
 command: docker build -t image_name path_of_Dockerfile [docker build -t img1 .]
+CMD use chesinapudu container nundi exit avthundi direct ga so its not an issue
 
 FROM: base image
 RUN: executes Linux commands (image creation)
