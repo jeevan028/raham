@@ -478,6 +478,7 @@ local files to cont
 cd /home/ec2-user/
 touch file{1..10}
 docker run -it --name cont7 -v /home/ec2-user:/abcd ubuntu
+/abcd- idi folder create avthundi dantlo files untaie
 
 multiple volues to single container
 docker volume create vola
