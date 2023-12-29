@@ -404,6 +404,98 @@ window.onclick = function(event) {
 </body>
 </html>
 
+DOCKER volumes
+*volume- it is used to store the container
+*volume means a directory 
+*volume ani apudu antam ante while container creation chesetapudu create chesthene volume antam
+*single volume can be shared to multiple containers
+* but at a single time we share a volume to single container.
+* in ubuntu there will be vim pakgs we need to install it to use
+
+Creation of volumes: in Dockerfile
+From ubuntu
+Volume ["/vol1"]
+docker build -t swiggy:v1 .
+docker run -it --name cont1 swiggy:v1
+cd vol1
+touch file{1..5}-- exit from cont1
+
+CMD used to create container and use the existing volume in another container-
+docker run -it --name cont2 --volumes-from cont1 --privileged=true ubuntu
+cd vol1
+touch file{5..10}-- exit from cont2
+
+in the above command we need to used diff image which doesn't consists of any volumes.
+Ex- from cont2 we added 5 files in vol1 those files will reflect in all the container which consists of this volume
+
+to get into container use below command
+CMD- docker attach cont1
+
+method-2
+From command:
+docker run -it --name cont3 -v /vol2 ubuntu
+touch java{1..5}
+now we have cont3 and vol2 with java 1..5 files
+docker run -it --name cont4 --volumes-from cont3 --privileged=true ubuntu
+ll
+cd vol2
+ll- we can see java1..5 files here
+
+Method-3
+mounting a volume: volume is created in the local and attach to the containers
+docker volume ls- used to list the volumes
+docker inspect volume volumeID: to get info of the volume
+docker volume create vol3: to create volume
+
+create volume
+inspect vol
+cd mountpoint
+create files
+docker run -it --name cont5 --mount "source=vol3,destination=/cont5vol" ubuntu
+
+example:
+docker volume ls
+docker volume inspect vol3
+copy path and give info in to the path
+vi [path]
+touch python{1..10}
+cmd used to attach vol3 to cont5-
+docker run -it --name cont5 --mount "source=/vol3,destination=/cont5vol" ubuntu
+cd cont5vol
+ll
+touch pythong{11..20}
+ctrl+p+q
+docker inspect vol3
+copy path
+cd path
+ll
+all pythong 1.20 files will reflect here
+
+docker volume rm volname: to delete the volume
+
+metho:4
+local files to cont 
+cd /home/ec2-user/
+touch file{1..10}
+docker run -it --name cont7 -v /home/ec2-user:/abcd ubuntu
+
+multiple volues to single container
+docker volume create vola
+docker volume create volb
+docker run -it --name cont8 -v vola -v volb ubuntu
+
+multiple vol via docker file
+from ubuntu
+volume ["/vol1"]
+volume ["/vol2"]
+docker build -t swiggy:v1 .
+docker run -it --name cont9 swiggy:v1
+
+docker system df -v: shows end to end info of the volumes
+docker system df: shows basic info in shortcut
+
+
+
 ====================
 
 DAY-04: 13-07-2023 COMPOSE
