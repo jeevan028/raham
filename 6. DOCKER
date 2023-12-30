@@ -403,7 +403,7 @@ window.onclick = function(event) {
 
 </body>
 </html>
-
+****************class 50***********
 DOCKER volumes
 *volume- it is used to store the container
 *volume means a directory 
