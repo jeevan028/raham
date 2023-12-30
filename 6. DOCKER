@@ -507,12 +507,10 @@ DOCKER COMPOSE:
 • It used YAML file to manage multi containers as a single service.
 • The Compose file provides a way to document and configure all of the application's service dependencies (databases, queues, caches, web service AP|s, etc).
 
-DOCKER COMPOSE:
-
-It is a tool used to build, run and ship multiple containers for application.
-It is used to create multiple containers in a single host.
-It used the YAML file to manage multi containers as a single service.
-The Compose file provides a way to document and configure all of the application’s service dependencies (databases, queues, caches, web service APIs, etc). 
+COMPOSE FILE:
+The Docker Compose file includes Services, Networks and Volumes.
+The Default Path is ./docker-compose.yml, compose.yml (yaml=yml)
+It contains a service definition which configures each container started for that service.
 
 COMPOSE/DOCKER COMPOSE FILE: (yml=yaml)
 We provide details about services.
