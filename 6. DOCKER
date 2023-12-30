@@ -499,7 +499,13 @@ docker system df: shows basic info in shortcut
 
 ====================
 
-DAY-04: 13-07-2023 COMPOSE
+DAY-04: 13-07-2023 
+
+DOCKER COMPOSE:
+• It is a tool used to build, run and ship the multiple containers for application.
+• It is used to create multiple containers in a single host.
+• It used YAML file to manage multi containers as a single service.
+• The Compose file provides a way to document and configure all of the application's service dependencies (databases, queues, caches, web service AP|s, etc).
 
 DOCKER COMPOSE:
 
