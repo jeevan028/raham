@@ -528,6 +528,20 @@ stop vs kill:
 it will wait a few sec to stop the running process
 it won't wait to stop the process 
 
+from docker file build image and then create container from that image
+
+steps: vi index.html (change to movies/train/dth and recharge)
+2. build dockerimage with docker file ( docker build -t paymovies .)
+3. edit docker compose file
+4. docker compose up -d
+5. docker compose down : used to stop all the running containers
+
+docker-compose ps -a :it will all the container which used compose file
+docker-compose images: : shows composed used images
+docker-compose logs: shows all logs with compose file
+docker-compose events: same as logs
+
+
 WORKING:
 
 version: '3'
@@ -548,6 +562,9 @@ services:
     image: payrecharge:v1
     ports:
       - "93:80"
+
+COMMAND used to convert compose file to container:
+docker compose up -d 
 
 
 HISTORY:
