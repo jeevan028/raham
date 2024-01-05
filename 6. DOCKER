@@ -697,3 +697,9 @@ HISTORY:
    52  hostnamectl set-hostame manager
    53  hostnamectl set-hostname manager
    54  sudo -i
+
+
+************class 54-project******************
+
+
+Docker project with git jenkiks
